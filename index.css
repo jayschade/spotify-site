@@ -60,3 +60,39 @@ body {
   margin-top: 08px;
   margin-left: 520px;
 }
+
+@media screen and (max-width: 900px) {
+  .drawer-body {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .image {
+    left: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .head h1 {
+    font-size: 36px;
+    margin-left: 16px;
+    margin-top: 0;
+  }
+  .questions h1,
+  .questions p,
+  .questions .p-1 {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .questionsh1 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head h1 {
+    font-size: 28px;
+  }
+  .gpl,
+  .vap {
+    margin-left: 16px;
+  }
+}
