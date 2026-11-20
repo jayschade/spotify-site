@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  left: 00px;
+  top: 100px;
+}
+
+.logo {
+  width: 40px;
+  position: relative;
+  left: 600px;
+}
+
+.container h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  padding-left: 470px;
+}
+
+.e-mail {
+  display: block;
+  color: white;
+  padding-top: 10px;
+  margin-left: 480px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.continue {
+  background-color: #1ed760;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  width: 330px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 30px;
+  margin-left: 480px;
+  margin-top: 30px;
+}
+
+.or {
+  color: white;
+  margin-left: 640px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.btn-1 {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 25px;
+  width: 330px;
+  margin-left: 490px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+}
+.cwpn {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.google {
+  margin-left: -70px;
+}
+
+.fb {
+  margin-left: -70px;
+  width: 30px;
+  /* height: 30px; */
+}
+
+.apple {
+  margin-left: -70px;
+  width: 30px;
+  /* height: 30px; */
+}
+
+.footer {
+  margin-top: 70px;
+  color: white;
+  margin-left: 300px;
+}
+
+.p-1 {
+  padding-left: 280px;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+
+.p-2 {
+  padding-top: 15px;
+  padding-left: 340px;
+  font-size: 19px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.p-3 {
+  padding-top: 50px;
+  padding-left: 200px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+
+.span-1 {
+  padding-left: 70px;
+}
+
+.input-email {
+  margin-left: 480px;
+  width: 320px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #474747;
+  border-radius: 5px;
+}

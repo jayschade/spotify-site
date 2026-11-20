@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar sm:navbar-expand bg-1 fg-2"
+      style="box-shadow: 0 20px 400px green"
+    >
+      <div class="container-fluid">
+        <img
+          src="assets/spotify.png"
+          alt=""
+          width="150"
+          style="margin-left: 50px"
+        />
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarNav"
+          aria-labelledby="navbarNavLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav">
+              <li
+                class="nav-item"
+                style="justify-content: space-around; gap: 30px"
+              >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="
+                    font-size: 22px;
+                    font-weight: 500;
+                    padding-left: -900px;
+                  "
+                  >Premium Plans</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="font-size: 22px; font-weight: 500"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="font-size: 22px; font-weight: 500"
+                  >Download</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <div class="image">
+      <img src="assets/spo.png" alt="" width="500" />
+    </div>
+
+    <div class="head" style="z-index: 1000">
+      <h1>
+        Listen without limits. Try 6 <br />
+        months of premium <br />
+        individual for #800 per <br />
+        month
+      </h1>
+      <p style="margin-left: 40px">Only #1,500 per month. Cancel anytime.</p>
+      <button class="gpl">Get premium individuals</button>
+      <button class="vap">View all plans</button>
+      <p style="margin-left: 40px; margin-top: 10px">
+        Premium individual only #800 per month for 6 months, then #1,000 per
+        month
+      </p>
+    </div>
+
+    <div class="head1">
+      <h1 style="margin-left: 400px; margin-top: 100px">
+        Experience the diffrence
+      </h1>
+      <p style="margin-left: 400px; margin-top: 10px">
+        Go premium and enjoy full control of your listening. Cancel <br />
+        <span style="margin-left: 200px">anytime</span>
+      </p>
+    </div>
+
+    <table
+      class="table table-hover"
+      data-bs-theme="dark"
+      style="width: 35%; margin-left: 400px; margin-top: 30px"
+    >
+      <thead>
+        <th>What you'll get</th>
+        <th>
+          Spotify's <br />
+          Free plan
+        </th>
+        <th>
+          <img
+            src="assets/spotify_logo-removebg-preview.png"
+            alt=""
+            width="40"
+          />Spotify's <br />
+          <span style="margin-left: 40px">premium </span><br />
+          <span style="margin-left: 40px"> plans</span> <br />
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ad Free music listening</td>
+          <td>-</td>
+          <td><span class="material-symbols-outlined"> check_circle </span></td>
+        </tr>
+        <tr>
+          <td>
+            Download to listen <br />
+            offline
+          </td>
+          <td>-</td>
+          <td><span class="material-symbols-outlined"> check_circle </span></td>
+        </tr>
+        <tr>
+          <td>Play songs in any order</td>
+          <td>-</td>
+          <td><span class="material-symbols-outlined"> check_circle </span></td>
+        </tr>
+        <tr>
+          <td>High audio quality</td>
+          <td>-</td>
+          <td><span class="material-symbols-outlined"> check_circle </span></td>
+        </tr>
+        <tr>
+          <td>
+            Listen with friends in <br />
+            real time
+          </td>
+          <td>-</td>
+          <td><span class="material-symbols-outlined"> check_circle </span></td>
+        </tr>
+        <tr>
+          <td>
+            Organise listening <br />
+            queue
+          </td>
+          <td>-</td>
+          <td><span class="material-symbols-outlined"> check_circle </span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="affordable">
+      <h1 style="margin-left: 310px; margin-top: 50px">
+        Affordable plans for any situation
+      </h1>
+      <p style="margin-left: 330px; margin-top: 10px; font-size: 13px">
+        Choose a premium plan and listen to ad-free music without limits on your
+        phone,speaker and <br />
+        <span style="margin-left: 100px">
+          other devices. Pay in various ways. Cancel anytime.</span
+        >
+      </p>
+      <div class="paymeants" style="margin-left: 400px; margin-top: 30px">
+        <img
+          src="assets/visa.webp"
+          alt=""
+          width="100"
+          height="50"
+          style="border-radius: 10px"
+        />
+        <img
+          src="assets/mastercard.jpg"
+          alt=""
+          width="100"
+          height="50"
+          style="border-radius: 10px"
+        />
+        <img
+          src="assets/verve.webp"
+          alt=""
+          width="100"
+          height="50"
+          style="border-radius: 10px"
+        />
+        <img
+          src="assets/opay.webp"
+          alt=""
+          width="100"
+          height="50"
+          style="border-radius: 10px"
+        />
+      </div>
+    </div>
+
+    <table
+      class="table table-borderless"
+      style="margin-left: 180px; margin-top: 130px"
+    >
+      <tr>
+        <th style="font-size: 30px; padding-left: 140px">
+          All Premium plans include
+        </th>
+      </tr>
+      <table
+        class="table table-borderless"
+        style="margin-left: 750px; margin-top: -90px"
+      >
+        <tr>
+          <td>✓ Ad-free music listening</td>
+        </tr>
+        <tr>
+          <td>✓ Download to listen offline</td>
+        </tr>
+        <tr>
+          <td>✓ Play songs in any order</td>
+        </tr>
+        <tr>
+          <td>✓ High audio quality</td>
+        </tr>
+        <tr>
+          <td>✓ Listen with friends in real time</td>
+        </tr>
+        <tr>
+          <td>✓ Organise listening queue</td>
+        </tr>
+      </table>
+    </table>
+
+    <div
+      class="cards"
+      style="
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 100px;
+        margin-left: 70px;
+        justify-content: space-around;
+      "
+    >
+      <div class="card" style="max-width: 350px; height: 500px">
+        <div class="card-body" style="margin-left: 20px; margin-right: 20px">
+          <p
+            style="
+              background-color: green;
+              color: black;
+              width: 120px;
+              border-radius: 5px;
+              margin-left: -20px;
+              font-weight: 600;
+            "
+          >
+            6-month offer
+          </p>
+          <p>
+            <img
+              src="assets/spotify_logo-removebg-preview.png"
+              alt=""
+              width="50"
+            />
+            Premium
+          </p>
+          <h4 class="card-title" style="color: darkgreen; font-size: 28px">
+            Individual
+          </h4>
+          <p class="card-text">#800 per month for 6 months</p>
+          <p class="card-subtitle fg-3" style="padding-top: -15px">
+            #1,800/month after
+          </p>
+
+          <hr />
+          <ul style="margin-left: 20px; padding-top: 20px">
+            <li>1 Premium account</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <button
+            style="
+              background-color: green;
+              border: none;
+              width: 250px;
+              margin-top: 30px;
+              border-radius: 30px;
+              padding: 8px 25px;
+              color: black;
+              font-weight: 600;
+            "
+          >
+            Get Premium Individual
+          </button>
+          <p style="font-size: 11px; padding-top: 20px">
+            #800 per month for 6 months, then 1,800 per month <br />
+            after. Offer only available if ou haven't tried premium <br />
+            <span style="margin-left: 90px">
+              before. <a href="">Terms apply</a></span
+            ><br />
+            <span style="margin-left: 50px">
+              Offer ends 31'st October, 2026</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 350px">
+        <div class="card-body" style="margin-left: 20px; margin-right: 20px">
+          <p
+            style="
+              background-color: skyblue;
+              color: black;
+              width: 120px;
+              border-radius: 5px;
+              margin-left: -20px;
+              font-weight: 600;
+            "
+          >
+            #0 for 1month
+          </p>
+          <p>
+            <img
+              src="assets/spotify_logo-removebg-preview.png"
+              alt=""
+              width="50"
+            />
+            Premium
+          </p>
+          <h4 class="card-title" style="color: skyblue; font-size: 25px">
+            Student
+          </h4>
+          <p class="card-text">#0 for 1month</p>
+          <p class="card-subtitle fg-3">#800 per month after</p>
+
+          <hr />
+          <ul style="margin-left: 20px; margin-top: 27px">
+            <li>1verified Premium account</li>
+            <li>Discount for eligible students</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <button
+            style="
+              background-color: skyblue;
+              border: none;
+              width: 280px;
+              border-radius: 30px;
+              padding: 8px 25px;
+              color: black;
+              font-weight: 600;
+            "
+          >
+            Try 1month for #0
+          </button>
+          <p style="font-size: 11px; margin-top: 20px">
+            #0 for 1month, then #800 per month after. Offer reserved <br />
+            for students enrolled in an eligible accredited institution or
+            <br />
+            higher institution. Not eligible for users who have already <br />
+            <span style="margin-left: 5px"
+              >tried Premium. Subect to Spotify student discount</span
+            >
+            <br />
+            <span style="margin-left: 80px"
+              ><a href=""> Terms and Conditions</a></span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 350px">
+        <div class="card-body" style="margin-left: 20px; margin-right: 20px">
+          <p style="margin-top: 15px">
+            <img
+              src="assets/spotify_logo-removebg-preview.png"
+              alt=""
+              width="50"
+              style="margin-top: 5px"
+            />
+            Premium
+          </p>
+          <h4 class="card-title" style="color: orangered; font-size: 25px">
+            Duo
+          </h4>
+          <p class="card-text">#2,100/month</p>
+          <br />
+          <hr />
+          <ul style="margin-left: 20px; margin-top: 50px">
+            <li>2 Premium account</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <button
+            style="
+              background-color: orangered;
+              border: none;
+              width: 250px;
+              border-radius: 30px;
+              padding: 8px 25px;
+              margin-top: 12px;
+              color: black;
+              font-weight: 600;
+            "
+          >
+            Get Premium Individual
+          </button>
+          <p style="font-size: 11px; margin-top: 23px">
+            For couples who reside at the same address.
+            <a href="">Terms apply</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="card"
+      style="
+        max-width: 330px;
+        margin-top: 30px;
+        margin-left: 490px;
+        height: 400px;
+      "
+    >
+      <div class="card-body" style="margin-left: 20px; margin-right: 20px">
+        <p style="margin-top: 10px">
+          <img
+            src="assets/spotify_logo-removebg-preview.png"
+            alt=""
+            width="50"
+          />
+          Premium
+        </p>
+        <h4 class="card-title" style="color: purple; font-size: 30px">
+          Family
+        </h4>
+        <p class="card-text">#2,500 per month</p>
+        <hr />
+        <ul style="margin-left: 20px">
+          <li>Up to 6 Premium accounts</li>
+          <li>Parental controls for the plan manager</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <button
+          style="
+            background-color: plum;
+            border: none;
+            width: 270px;
+            border-radius: 30px;
+            padding: 8px 25px;
+            margin-top: 20px;
+            color: black;
+            font-weight: 600;
+          "
+        >
+          Get premium family
+        </button>
+        <p style="font-size: 11px; margin-top: 20px">
+          For up to 6 family members residing at the same address. <br />
+          <span style="margin-left: 110px"> <a href="">Terms apply</a></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="questions">
+      <h1>Questions?</h1>
+      <p>We've got answers</p>
+      <p class="p-1">Find more on our <a href="">Support site</a></p>
+    </div>
+
+    <div
+      class="accordion"
+      style="margin-top: 40px; width: 88%; margin-left: 90px"
+    >
+      <details class="accordion-item" open>
+        <summary
+          class="accordion-header"
+          style="
+            font-weight: 600;
+            color: white;
+            height: 50px;
+            padding-left: 20px;
+          "
+        >
+          How does the Spotify Premium trial work?
+          <svg
+            class="accordion-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="margin-left: 740px"
+          >
+            <path d="m2 5 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="accordion-body" style="margin-left: 10px; margin-top: 10px">
+          If you've never had Premium before, you may be eligible for a free (or
+          reduced rate) trial. <br />
+          <br />For trials, you'll still need to enter a valid payment method to
+          sign up. We'll use this to confirm your country or region and take
+          payments if you want to <br />
+          keep Premium after the offer ends. <br />
+          <br />
+          We'll send you a reminder 7 days before your trial ends. Country
+          restrictions and Terms apply.
+        </div>
+      </details>
+      <details class="accordion-item" name="accordionExample">
+        <summary
+          class="accordion-header"
+          style="
+            font-weight: 600;
+            color: white;
+            height: 50px;
+            padding-left: 20px;
+          "
+        >
+          How do I cancel my Premium plan?
+          <svg
+            class="accordion-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="margin-left: 790px"
+          >
+            <path d="m2 5 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="accordion-body" style="margin-left: 10px; margin-top: 10px">
+          You can easily cancel your Premium plan online at any time on your
+          account page. <br />
+          <br />Premium paid subscriptions when cancelled will run until your
+          next billing date, after which your account will switch over to our
+          free services. <br />
+          <br />If you cancel during a zero-priced period, you will loose access
+          to your Premium benefits immediately and your accounts will switch
+          over to our free <br />
+          service. Zero-priced free trials cannot be reactivated. <br />
+          <br />You'll still have all your playlists and saved music, and be
+          able to listen with ads on our free service.
+        </div>
+      </details>
+      <details class="accordion-item" name="accordionExample">
+        <summary
+          class="accordion-header"
+          style="
+            font-weight: 600;
+            color: white;
+            height: 50px;
+            padding-left: 20px;
+          "
+        >
+          How does the Premim Duo plan work?
+          <svg
+            class="accordion-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="margin-left: 765px"
+          >
+            <path d="m2 5 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="accordion-body" style="margin-left: 10px; margin-top: 10px">
+          Premium Duo is a plan for a couple who live together. Compared with
+          having two full-priced Premium Individual accounts, it's also cheaper.
+          We'll ask for <br />
+          your address to ensure you live at the same address. You can invite a
+          memeber to the plan right after the purchase. Each member has their
+          own seperate <br />
+          Premium account and can listen at the same time with their own
+          account. All saved music and playlists are their own. The other
+          account holder cannot see <br />
+          what you're listening to. <br />
+          <br />
+          <a href="">Read more</a> info about Premium Duo.
+        </div>
+      </details>
+      <details class="accordion-item" name="accordionExample">
+        <summary
+          class="accordion-header"
+          style="
+            font-weight: 600;
+            color: white;
+            height: 50px;
+            padding-left: 20px;
+          "
+        >
+          How does the Premium Family plan work?
+          <svg
+            class="accordion-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="margin-left: 740px"
+          >
+            <path d="m2 5 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="accordion-body" style="margin-left: 10px; margin-top: 10px">
+          Premium Family is a plan for up to 6 family members who live together.
+          Compared to everyone having their own full-priced Premium Individual
+          account, it's also cheaper . We will ask for your address to ensure
+          you live at the same address. You can invite members to the plan right
+          after the purchase. Each <br />
+          member has their own seperate Premium account and can listen at the
+          same time with their account. All saved music and playlists are their
+          own. <br />
+          Other account holders cannot see what you're listening to. <br />
+
+          <br /><a href="">Read more</a> info about Premium Family.
+        </div>
+      </details>
+      <details class="accordion-item" name="accordionExample">
+        <summary
+          class="accordion-header"
+          style="
+            font-weight: 600;
+            color: white;
+            height: 50px;
+            padding-left: 20px;
+          "
+        >
+          How does Premium Student Plan work?
+          <svg
+            class="accordion-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="margin-left: 760px"
+          >
+            <path d="m2 5 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="accordion-body" style="margin-left: 10px; margin-top: 10px">
+          If you are enrolled at an accredited institution of higher education
+          that is eleigible for the offer, and you are over 18. You can get
+          Premium Student for up to 4 years. <br />
+          <br /><a href="">Read more</a> info about Premium Student.
+        </div>
+      </details>
+      <details class="accordion-item" name="accordionExample">
+        <summary
+          class="accordion-header"
+          style="
+            font-weight: 600;
+            color: white;
+            height: 50px;
+            padding-left: 20px;
+          "
+        >
+          How much is Spotify Premium in Nigeria?
+          <svg
+            class="accordion-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="margin-left: 745px"
+          >
+            <path d="m2 5 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="accordion-body" style="margin-left: 10px; margin-top: 10px">
+          The Spotify Premium prices in Nigeria are diffrent depending on which
+          premium plan you choose. The Spotify Premium Individual costs #1,600
+          per <br />
+          month, the Spotify Premium Duo plan costs #8,00 per month, the premium
+          student plan costs #8,00 per <br />
+          month. If you've never had a premium plan before, you may be eligible
+          for a free (or reduced rate) trial. Country restrictions and terms
+          apply.
+        </div>
+      </details>
+    </div>
+
+    <table style="margin-left: 80px; padding: 15px; margin-top: 80px">
+      <tr>
+        <td style="padding: 10px">
+          <img src="assets/spotify.png" alt="" width="120" />
+        </td>
+        <td style="padding: 10px; color: gray; font-weight: 600">COMPANY</td>
+        <td style="padding: 10px; color: gray; font-weight: 600">
+          COMMUNITIES
+        </td>
+        <td style="padding: 10px; color: gray; font-weight: 600">
+          USEFUL LINKS
+        </td>
+        <td style="padding: 10px; color: gray; font-weight: 600">
+          SPOTIFY PLANS
+        </td>
+        <td style="padding: 10px; color: gray; font-weight: 600">
+          <img src="assets/insta-removebg-preview.png" alt="" width="40" />
+        </td>
+        <td style="padding: 10px">
+          <img src="assets/facebook-removebg-preview.png" alt="" width="55" />
+        </td>
+        <td style="padding: 10px">
+          <img src="assets/x-removebg-preview.png" alt="" width="65" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 14px; padding: 10px">About</td>
+        <td style="font-size: 14px; padding: 10px">For Artists</td>
+        <td style="font-size: 14px; padding: 10px">Support</td>
+        <td style="font-size: 14px; padding: 10px">Premium Individual</td>
+        <td style="font-size: 14px; padding: 10px"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 14px; padding: 10px">Jobs</td>
+        <td style="font-size: 14px; padding: 10px">For Creators</td>
+        <td style="font-size: 14px; padding: 10px">
+          <a href="web.html" style="text-decoration: none; color: white"
+            >Web player</a
+          >
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 14px; padding: 10px">For the record</td>
+        <td style="font-size: 14px; padding: 10px">For authors</td>
+        <td style="font-size: 14px; padding: 10px">Free Mobile</td>
+        <td style="font-size: 14px; padding: 10px">Premium Duo</td>
+        <td style="font-size: 14px; padding: 10px"></td>
+      </tr>
+      <tr>
+        <td style="font-size: 14px; padding: 10px"></td>
+        <td style="font-size: 14px; padding: 10px"></td>
+        <td style="font-size: 14px; padding: 10px">For Developers</td>
+        <td style="font-size: 14px; padding: 10px">Import your music</td>
+        <td style="font-size: 14px; padding: 10px">Premium Family</td>
+        <td style="font-size: 14px; padding: 10px"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="font-size: 14px; padding: 10px">Advertising</td>
+        <td></td>
+        <td>Premium Support</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="font-size: 14px; padding: 10px">Investors</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="font-size: 14px; padding: 10px">Vendors</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
